@@ -1,0 +1,71 @@
+<form action="/submit-kelas" method="POST">
+  <link rel="stylesheet" href="dwiarleta.css">
+  <div>
+    <label for="fullName">Nama</label>
+    <br />
+    <input id="fullName" name="fullName" required />
+  </div>
+
+  <div>
+    <label for="alamat">Alamat</label>
+    <br />
+    <input id="alamat" name="alamat" required />
+  </div>
+
+  <div>
+    <label for="tempatLahir">Tempat Lahir</label>
+    <br />
+    <input type="text" id="tempatLahir" name="tempatLahir" />
+  </div>
+
+  <div>
+    <label for="tanggalLahir">Tanggal Lahir</label>
+    <br />
+    <input type="date" id="tanggalLahir" name="tanggalLahir" />
+  </div>
+
+  <div>
+    <label>Jenis Kelamin</label>
+    <br />
+    <label>
+      <input type="radio" name="jenisKelamin" value="laki-laki" required /> Laki-laki
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="jenisKelamin" value="perempuan" required /> Perempuan
+    </label>
+  </div>
+
+  <div>
+    <label>Hobi</label>
+    <br />
+    <label>
+      <input type="checkbox" name="hobi" value="membaca" /> Membaca
+    </label>
+    <br />
+    <label>
+      <input type="checkbox" name="hobi" value="travelling" /> Traveling
+    </label>
+    <br />
+    <label>
+      <input type="checkbox" name="hobi" value="olahraga" /> Olahraga
+    </label>
+  </div>
+
+  <div>
+    <label for="kelas">Pilih Kelas:</label>
+    <br />
+    <select id="kelas" name="kelas" required>
+      <option value="kelasA">X PPLG 1</option>
+      <option value="kelasB">X PPLG 2</option>
+    </select>
+  </div>
+
+  <div>
+    <label>
+      <input type="checkbox" name="remember" value="remember" /> Remember me
+    </label>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
